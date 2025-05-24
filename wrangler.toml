@@ -2,14 +2,9 @@ name = "nautica"
 main = "_worker.js"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat_v2"]
-
-# Tambahkan account_id dan zone_id kalau kamu tahu nilainya
-# Kamu bisa dapatkan dari dashboard Cloudflare
 account_id = "e8de976c4f335309e91da49ce403215c"
-# zone_id = "your_zone_id"
-
-workers_dev = true  # Atau false jika kamu publish ke domain sendiri
-logpush = true      # Untuk dukung observability log push
+workers_dev = true
+logpush = true
 
 [unsafe.metadata.observability]
 enabled = true
